@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home</title>
+</head>
+<body>
+    <h2>{{>header}}</h2>
+    {{!-- <h2>{{title}}</h2>
+    <h2>{{desc}}</h2> --}}
+
+    <form id="form1">
+        <h2 class="Pagetitle">Enter a country to know its weather , Temperature , The latitude and The longitude</h2>
+        {{!-- <div class="formBack"> --}}
+            <input type="text" id="address">
+            <button>Search for weather</button>
+        {{!-- </div> --}}
+    </form>
+    <form class="weatherData">
+        <p id="location"></p>
+        <p id="forecast"></p>
+        <p id="latitude"></p>
+        <p id="longitude"></p>
+        <p id="error"></p>
+    </form>
+        
+    <script src="js/scribt.js"></script>
+    
+</body>
+</html>
